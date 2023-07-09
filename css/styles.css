@@ -276,10 +276,14 @@ button {
     background-repeat: no-repeat;
     margin: 0 auto 96px;
     padding-bottom: 112px;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1439px) {
     overflow: hidden;
+    padding-top: 112px;
+    padding-bottom: 112px;
     }
     @media screen and (min-width: 1440px) {
+        padding-top: 188px;
+        padding-bottom: 188px;
         margin-bottom: 120px;
     }
 }
@@ -328,7 +332,6 @@ button {
 }
 
 .main-title {
-    padding-top: 112px;
     color: var(--white-background);
     margin: 0 auto;
     text-transform: capitalize;
@@ -347,9 +350,10 @@ button {
         text-align: center;
         line-height: 60px;
         letter-spacing: 1.12px;
+        margin-bottom: 48px;
     }
-    @media screen and (min-width: 1440px) {
-        padding-top: 188px;
+    @media screen and (min-width: 768px)  and (max-width: 1439px){
+        margin-bottom: 36px;
     }
 }
 
@@ -358,6 +362,7 @@ button {
         width: 100%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     @media screen and (min-width: 768px) {
         display: flex;
@@ -553,17 +558,13 @@ button {
     padding-bottom: 120px;
 }
 
-.card-main-description {
-    margin: 0;
-}
-
-.card-main-description {
+p.card-main-description {
     margin: 0 auto;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.32px;
     @media screen and (max-width: 767px) {
-        text-align: center;
+        width: calc(100vw - 32px);
     }
 }
 
